@@ -1,5 +1,5 @@
-    
-
+    1  whoami?
+    2  whoami
     3  ls
     4  whoami
     5  firefox &
@@ -95,3 +95,83 @@
    95  history
    96  cat history.txt
    97  history > history.txt
+   98  ls -l
+   99  nano history.txt
+  100  cat history.txt
+  101  git add .
+  102  git commit -m "20170914_16_45"
+  103  git push origin master
+  104  man echo
+  105  echo Tecmint is a community of Linux Nerds
+  106  x=10
+  107  echo The value of variable x = $x 
+  108  echo -e "Tecmint \bis \ba \bcommunity \bof \bLinux \bNerds" 
+  109  echo -e "Tecmint \nis \na \ncommunity \nof \nLinux \nNerds"
+  110  echo yyy
+  111  echo -e "Tecmint \tis \ta \tcommunity \tof \tLinux \tNerds" 
+  112  echo -e "\n\tTecmint \n\tis \n\ta \n\tcommunity \n\tof \n\tLinux \n\tNerds" 
+  113  echo -e "\vTecmint \vis \va \vcommunity \vof \vLinux \vNerds"
+  114  echo -e "\vTecmint \vis \va \vcommunity \vof /Linux \Nerds"
+  115  echo -e "\vTecmint \vis \va \vcommunity \vof \vLinux \Nerds"
+  116  echo  "\vTecmint \vis \va \vcommunity \vof \vLinux \vNerds"
+  117  echo -e "Tecmint \ris a community of Linux Nerds"
+  118  echo -e "Tecmint is a community of Linux Nerds"
+  119  echo -e "\vTecmint \vis \va \vcommunity \vof \vLinux \vNerds" 
+  120  echo -e "\n\tTecmint \n\tis \n\ta \n\tcommunity \n\tof \n\tLinux \n\tNerds"
+  121  echo -e "Tecmint \tis \ta \tcommunity \tof \tLinux \tNerds" 
+  122  echo -e "Tecmint \bis \ba \bcommunity \bof \bLinux \bNerds" 
+  123  echo -e "Tecmint is a community \cof Linux Nerds"
+  124  echo -n "Tecmint is a community of Linux Nerds" 
+  125  echo -e "Tecmint is a community of \aLinux Nerds"
+  126  echo * 
+  127  echo *.jpeg 
+  128  echo "Test Page" > testpage 
+  129  echo -e "\vTecmint \vis \va \vcommunity \vof \vLinux \vNerds" 
+  130  echo -e "qqqqqqqqqqqq /r aaqssgds dsggdsgd "
+  131  pwd
+  132  ls
+  133  pwd
+  134  cp
+  135  cp history.txt a.txt
+  136  ls -l
+  137  cp history.txt ~/a1.txt
+  138  cp history.txt /home/user/a2.txt
+  139  pwd
+  140  cp history.txt /home/grats/a2.txt
+  141  cp history.txt ../a3.txt
+  142  ls
+  143  cd
+  144  ls
+  145  cd
+  146  pwd
+  147  cd /
+  148  pwd
+  149  mv /home/grats/*.txt ~/darbi/
+  150  cd
+  151  ls
+  152  cd darbi
+  153  ls
+  154  ped
+  155  pwd
+  156  mkdir apaksdarbi
+  157  ls -l
+  158  mv a*.txt ./apaksdarbi/
+  159  ls -l
+  160  cd apaksdarbi/
+  161  ls
+  162  cd
+  163  rmdir apaksdarbi/
+  164  rmdir apaksdarbi
+  165  rmdir /apaksdarbi
+  166  rm apaksdarbi/
+  167  rm -r apaksdarbi/
+  168  ls
+  169  cd darbi/
+  170  rm -r apaksdarbi/
+  171  pwd
+  172  ls
+  173  cat history.txt
+  174  nano history.txt
+  175  nano
+  176  ls
+  177  history > history.txt
