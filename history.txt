@@ -1,0 +1,70 @@
+    1  whoami?
+    2  whoami
+    3  ls
+    4  whoami
+    5  firefox &
+    6  ls
+    7  who
+    8  pwd
+    9  cd
+   10  lsd_release
+   11  lsb_release
+   12  man
+   13  scroll up
+   14  whoami
+   15  men
+   16  man pwd
+   17  date
+   18  free
+   19  w
+   20  cat /etc/*-release
+   21  echo $1
+   22  echo $0
+   23  pwd
+   24  whp
+   25  who
+   26  ls
+   27  ls -l
+   28  ls -a
+   29  ls -la
+   30  cd Documnets/
+   31  pwd
+   32  cd Documents
+   33  pwd
+   34  cd ..
+   35  pwd
+   36  cd ..
+   37  pwd
+   38  cd ..
+   39  pwd
+   40  cd home
+   41  cs user
+   42  cd user
+   43  cd /user
+   44  cd ..
+   45  cd /home/grats
+   46  pwd
+   47  cd /
+   48  pwd
+   49  cd
+   50  pwd
+   51  cd /
+   52  pwd
+   53  mkdir darbi
+   54  cd ~
+   55  mkdir Documents/
+   56  ls
+   57  mkdir darbi
+   58  ls
+   59  cd darbi/
+   60  pwd
+   61  ls -la
+   62  history
+   63  hirstory > history.txt
+   64  history > histort.txt
+   65  cat history.txt
+   66  history
+   67  cat
+   68  ls
+   69  cat history.txt
+   70  history > history.txt
