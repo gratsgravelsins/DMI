@@ -1,5 +1,5 @@
-    1  whoami?
-    2  whoami
+    
+
     3  ls
     4  whoami
     5  firefox &
@@ -68,3 +68,30 @@
    68  ls
    69  cat history.txt
    70  history > history.txt
+   71  cat history.txt
+   72  pwd
+   73  ls
+   74  cat history.txt
+   75  rm histort.txt
+   76  LS
+   77  ls
+   78  git init
+   79  git add .
+   80  sudo apt install git
+   81  git init
+   82  git add .
+   83  git config  --global grats.email gratsgrav@gmail.com
+   84  ls
+   85  git commit -m "20170914_15_55"
+   86  git config  --global grats.email" gratsgrav@gmail.com"
+   87  git commit -m "20170914_15_55"
+   88  git config  --global user.email gratsgrav@gmail.com
+   89  git commit -m "20170914_15_55"
+   90  git remote add origin https://github.com/gratsgravelsins/DMI.git
+   91  git push origin master
+   92  history
+   93  pwd
+   94  ls -l
+   95  history
+   96  cat history.txt
+   97  history > history.txt
