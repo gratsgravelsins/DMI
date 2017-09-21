@@ -1,4 +1,5 @@
 #!/bin/bash
+git config  --user.email gratsgrav@gmail.com
 git add . 
-git commit -m "20170921_15_35"
+git commit -m "20170921_15_50"
 git push origin master
