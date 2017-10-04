@@ -1,0 +1,40 @@
+Mājasdarbs 28.09.2017 Grats Grāvelsins REBC04
+Saraksts ar izmantotajām komandām.
+1)cd - ieiet failā vai direktorijā
+2)cd .. - izziet no faila vai direktorijas
+3)cd ~ - izziet līdz /home/user
+4)cat - apskatīt, kas atrodas failā
+5)CTR+L, clear - Notīrīt lapu 
+6)CTR+SHIFT+T - Jauns termināls
+7)cat /etc/*-release - pārbaudīt linux versiju
+8)cp - kopēšana 
+9)chmod 744 - piešķirt tiesības
+10)date - laiks, datums
+11)echo - izprintēt tekstu
+12)echo -e - izprintēt tekstu + lai darbotos dažādas komandas(\n,\t utt.)
+13)firefox - ieslēgt firefox
+14)firefox & - ieslēgt firefox ēnā
+15)free - cik daudz atmiņas izmantojam
+16)history - pārbaudīt darbību vēsturi
+16)man - parādo, ko kāda komanda dara
+17)mkdir - izveidot direktoriju
+18)more - uzzināt vairāk par failu(kas iekšā)
+19)mv - pārvietot failu
+20)nano - ieskatīties failā
+21)locate - atrast, kur fails atrodas
+22)ls - saraksts ar failiem/mapēm
+23)ls -a - saraksts ar paslēptajām mapēm/failiem/programmām
+24)ls -l - saraksts ar failiem/mapēm, kad tās izveidotas + atļauju (rwe) priekš 
+        īpašnieku, grupas un pārējiem
+25)ls -la - apvienu ls -a un ls -l, kas iepriekš aprakstīti
+26)touch - izveidot failu vai failus (vairākus reizē)
+27)PATH=$PATH:~ - papildināt ceļus 
+28)pwd - kur atrodos
+29)rm - izdzēst failu
+30)rmdir - izdzēst direktoriju
+31)rm -rf - izdzēst direktoriju ar visu tās saturu
+32)who - kas es esmu(user)+laiks
+33)whoami - kas es esmu(user)
+34)\n - teksts jaunā rindā
+35)\t - tab atstarpe
+
