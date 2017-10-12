@@ -1,0 +1,60 @@
+#!/bin/bash
+#REALATIONAL OPERATORS COMMENTS
+a=10
+b=20
+#1.piemers vai ir vienāds (-eq)
+if [ $a -eq $b ]
+then
+   echo "a=b"
+   echo  "$a -eq $b : a ir vienādi b"
+else
+   echo "a!=b"
+   echo "$a -eq $b: a nav vienādi b"
+fi
+
+
+
+if [ $a -ne $b ]
+then
+   echo -e "\na!=b"
+   echo -e "$a -ne $b: a nav vienāds ar  b"
+else
+   echo -e "\na=b"
+   echo -e "$a -ne $b : a ir vienāds ar  b"
+fi
+
+if [ $a -gt $b ]
+then
+   echo -e "\na>b"
+   echo -e "$a -gt $b: a ir lielāks par b"
+else
+   echo -e "\na!>b (! nav) "
+   echo -e "$a -gt $b: a nav lielāks par  b"
+fi
+
+if [ $a -lt $b ]
+then
+   echo -e "\na<b"
+   echo -e "$a -lt $b: a ir mazāks par b"
+else
+   echo -e "\na!<b (nav)"
+   echo -e "$a -lt $b: a nav mazāks par  b"
+fi
+
+if [ $a -ge $b ]
+then
+   echo -e "\na>=b"
+   echo -e "$a -ge $b: a ir lieāks vai vienāds par b"
+else
+   echo -e "\na!>=b(! nav)"
+   echo -e "$a -ge $b: a nav lielāks vai vienāds par  b"
+fi
+
+if [ $a -le $b ]
+then
+   echo -e "\na<=b"
+   echo -e "$a -le $b: a ir mazāks vai vienāds par b"
+else
+   echo -e "\na!<=b (! nav)"
+   echo -e "$a -le $b: a nav mazāks vai vienāds b"
+fi
