@@ -1,0 +1,8 @@
+#!/bin/bash
+echo "Lūdzu ievadi pirmo skaitli: "
+read a
+echo "Lūdzu ievadi otro skaitli: "
+read b
+#(` `) Apostrofi obligāti
+c=`expr $a + $b`
+echo "$a + $b= "$c

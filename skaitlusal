@@ -1,0 +1,31 @@
+#!/bin/bash
+
+echo "Ievadiet a: "
+read a
+echo "Ievadit b: "
+read b
+
+if [ $a -eq $b ]
+then
+echo "a ($a) ir vienāds ar b ($b)"
+elif [ $a -gt $b ]
+then 
+echo "a ($a) ir lielkāks par b ($b)"
+elif [ $a -lt $b ]
+then
+echo "a ($a) ir mazāks par b ($b)"
+fi
+
+
+
+
+
+
+
+
+#Komentārs(: <<'END'/END)
+: <<'END'
+#(` `) Apostrofi obligāti
+c=`expr $a + $b`
+echo "$a + $b= "$c
+END

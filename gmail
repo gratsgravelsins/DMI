@@ -1,2 +1,2 @@
 #!/bin/bash
-firefox & -new-tad www.gmail.com
+firefox & -new-tab www.gmail.com

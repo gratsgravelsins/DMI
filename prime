@@ -1,0 +1,21 @@
+#!/bin/bash
+#PRIME NUMBER SEARCH
+echo -n "Ievdiet skaitli: "
+read a
+i=2
+b=100
+
+while [ $i -lt $a ]
+do
+  if [ `expr $a % $i` -eq 0 ]
+  then
+      echo "$a nav prime skatilis"
+      echo "Since it is divisible by $i"
+      exit
+  fi
+  i=`expr $i + 1`
+done
+while [ $a -lt $b ]
+
+
+echo "$a ir prime skatilis "
