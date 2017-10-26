@@ -1,55 +1,29 @@
 #!/bin/bash
-: <<'END'
-#Lielākais skaitlis no trīs nezināmajiem!
 read -p "Ievadi pirmo skaitli : " n1
 read -p "Ievadi otro skaitli :  " n2
 read -p "Ievadi trešo skaitli : " n3
-if [ $n1 -gt $n2 ]  && [ $n1 -gt $n3 ]
+if (( $n1 > $n2 ))  && (( $n1 > $n3 )) && (( $n2 > $n3 ))
 then 
-echo "$n1 ir lielākais skaitlis"
-elif [ $n2 -gt $n1 ] && [ $n2 -gt $n3 ] 
+echo -e "MAX:$n1\nMIN:$n3"
+elif (( $n2 > $n1 )) && (( $n2 > $n3 )) && (( $n1 > $n3 )) 
 then
-echo "$n2 ir lielākais skaitlis"
-elif [ $n3 -gt $n2 ] && [ $n3 -gt $n1 ]
+echo -e "MAX:$n2\n$MIN:$n3"
+elif (( $n3 > $n2 )) && (( $n3 > $n1 )) && (( $n2 > $n1 ))
 then
-echo "$n3 ir lielākais skaitlis"
-fi 
+echo -e "MAX:$n3\nMIN:$n1"
+elif (( $n3 > $n2 )) && (( $n3 > $n1 )) && (( $n1 > $n2 ))
+then
+echo -e "MAX:$n3\nMIN:$n2"
+elif (( $n1 > $n2 )) && (( $n1 > $n3 )) && (( $n3 > $n2 ))
+then
+echo -e "MAX:$n1\nMIN:$n2"
+elif (( $n2 > $n1 )) && (( $n2 > $n3 )) && (( $n3 > $n1 ))
+then
+echo -e "MAX:$n2\nMIN:$n1"
+elif (( $n2 > $n1 )) && (( $n2 > $n3 )) && (( $n1 < $n3 ))
+then
+echo -e "MAX:$n2\nMIN:$n1"
+
+fi
 
 
-#2.PIEMĒRS SASKAITA TRĪS SKAITĻUS
-read -p "Ievadi pirmo skaitli : " n1
-read -p "Ievadi otro skaitli :  " n2
-read -p "Ievadi trešo skaitli : " n3
-# dolara zīme un dubulta iekava, tad rezultātu saskaita kopā!
-var=$(($n1+$n2+$n3))
-
-echo "Rezultāts = $var"
-
-
-#3. PIEMĒRS
-
-
-#4.piemērs
-
-read -p "Ievadi pirmo skaitli : " n1
-read -p "Ievadi otro skaitli :  " n2
-read -p "Ievadi trešo skaitli : " n3
-
-echo -e  "$n1\n$n2\n$n3" | sort -n 
-
-: <<'END'
-#5.piemērs
-#read -p "Ievadi pirmo skaitli : " n1
-#read -p "Ievadi otro skaitli :  " n2
-#read -p "Ievadi trešo skaitli : " n3
-#if [ $n1 -gt $n2 ]  && [ $n1 -gt $n3 ] && [ $n2 -gt $n3 ]
-#then 
-#echo -e "$n1\n$n2\n$n3"
-#elif [ $n2 -gt $n1 ] && [ $n2 -gt $n3 ] && [ $n1 -gt $n3 ] 
-#then
-#echo -e "$n2\n$n3\n$n1"
-#elif [ $n3 -gt $n2 ] && [ $n3 -gt $n1 ] && [ $n2 -gt $n1 ]
-#then
-#echo -e "$n3\n$n2\n$n1"
-#fi
-END

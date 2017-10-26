@@ -1,0 +1,4 @@
+#!bin/bash
+read -p "Ievadi pirmo skaitli: " n1
+read -p "Ievadi pirmo skaitli: " n2
+read -p "Ievadi pirmo skaitli: " n2
