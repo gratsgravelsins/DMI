@@ -1,0 +1,22 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+a = raw_input("Ievadi vardu: ")
+b = raw_input("Ievadi uzvardu: ")
+print "Tevi sauc - %s"%(a + ' ' + b)
+
+
+
+
+
+
+
+'''
+a = input("Ievadi kaut ko")
+print "TU esi ievadijis %s tipa datus" %(type(a))
+print a * a
+print a + a
+a = raw_input("Ievadi kaut ko")
+print "TU esi ievadijis %s tipa datus" %(type(a))
+#print a * a
+print a + a
+'''

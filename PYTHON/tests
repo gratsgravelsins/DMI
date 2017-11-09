@@ -1,0 +1,3 @@
+#!/usr/bin/python
+a = input('Izvelies skaitli')
+print ('Skaitlis: %s \n' %(a))

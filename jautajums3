@@ -7,5 +7,5 @@ read -p "Ievadi trešo skaitli : " n3
 read -p "Ievadi skaitli ar kuru vēlies dalīt : " n4
 # dolara zīme un dubulta iekava, tad rezultātu saskaita kopā!
 var=$((($n1+$n2+$n3)/$n4))
-rez=$(((var%n4)*10/3))
+rez=$((($n1+$n2+$n3%n3)*10))
 echo "$var.$rez"
