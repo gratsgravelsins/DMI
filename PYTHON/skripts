@@ -1,0 +1,5 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+a = input("Ievadi skaitli: ")
+b = input("Ievadi vēl vienu skaitli: ")
+print a + b; print a * b; print a + a;
