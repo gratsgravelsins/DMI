@@ -14,18 +14,3 @@ while k<50:
     a = a * (-1) * x**2/((2*k)*(2*k+1))
     s =  s + a
     print "a%d = %6.2f s%d = %6.2f"%(k,a,k,s)
-
-'''
-k = k + 1
-a = a * (-1) * x**2/((2*k)*(2*k+1))
-s =  s + a
-print "a%d = %6.2f s%d = %6.2f"%(k,a,k,s)
-k = k + 1
-a = a * (-1) * x**2/((2*k)*(2*k+1))
-s = s + a
-print "a%d = %6.2f s%d = %6.2f"%(k,a,k,s)
-k = k + 1                 
-a = a * (-1) * x**2 /((2*k)*(2*k+1))
-s = s + a                   
-print "a%d = %6.2f s%d = %6.2f"%(k,a,k,s)
-'''
