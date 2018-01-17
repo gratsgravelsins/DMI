@@ -9,7 +9,7 @@ k = 0
 a = (-1)**0*x**1/(1)
 s = a
 print "a%d = %6.2f s%d = %6.2f"%(k,a,k,s)
-while k<50:
+while k<10:
     k = k + 1
     a = a * (-1) * x**2/((2*k)*(2*k+1))
     s =  s + a

@@ -27,3 +27,5 @@ echo -e "MAX:$n2\nMIN:$n1"
 fi
 
 
+$vid = (( $n1 + $n2 + $n3 )/3)
+echo "Vidējā vērtība $vid"

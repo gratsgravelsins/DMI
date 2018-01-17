@@ -12,8 +12,6 @@ else
    echo "$a -eq $b: a nav vienādi b"
 fi
 
-
-
 if [ $a -ne $b ]
 then
    echo -e "\na!=b"

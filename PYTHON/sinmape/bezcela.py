@@ -8,12 +8,13 @@ y = ss.j1(x)
 print "J1(%.2f)=%.2f"%(x,y)
 
 k = 0
-a = (-1)**0*x**0/(1)
+a = (-1)**0*x**2*k
 s = a
 print "a%d = %6.2f s%d = %6.2f"%(k,a,k,s)
 while k<25:
     k = k + 1
-    a = (-1) * x**2/(k*(k+1)*4)
+    R = (-1) * x**2/(k*(k+1)*4)
+    a = a * R
     s = s + a
     print "a%d = %6.2f s%d = %6.2f"%(k,a,k,s)
 
