@@ -1,0 +1,144 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>M&#275;r&#299;jumu datu apstr&#257;de</title><meta name="generator" content="MATLAB 9.1"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2018-02-26"><meta name="DC.source" content="lab1.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h1>M&#275;r&#299;jumu datu apstr&#257;de</h1><pre class="codeinput"><span class="comment">%Grats Gr&#257;velsins - REBC04</span>
+A = imread(<span class="string">'a.png'</span>);
+B = imread(<span class="string">'b.png'</span>);
+figure(1),image(A),shg
+figure(2),image(B),shg
+figure(2),image([1.2 3.2],[50 0],B),
+set(gca,<span class="string">'YDir'</span>,<span class="string">'normal'</span>)
+<span class="comment">%[x,y] = ginput(7)</span>
+x = [1.5500 1.6184 1.6959 1.7781 1.8602 1.9103 1.9560];
+y = [1.3385 3.1413 6.7469 16.2115 30.1830 36.9434 44.9057];
+plot(x,y,<span class="string">'*r'</span>)
+U = 1.5:0.01:1.95;
+C = polyfit(x,y,2)
+<span class="comment">%C = [237.4828 -721.9800 549.4505];</span>
+I = C(1)*U.^2+C(2)*U+C(3);
+plot(x,y,<span class="string">'o'</span>,U,I)
+C = polyval(C,U);
+plot(x,y,<span class="string">'o'</span>,U,I)
+xlabel(<span class="string">'Voltage(V)'</span>);
+ylabel(<span class="string">'Strava(mA)'</span>)
+title(<span class="string">'Grafiks'</span>);
+axis([1.2 3.2 0 50])
+grid
+<span class="comment">%%Secinajumi: Ko es saprastu?</span>
+<span class="comment">%1) Es ielas&#299;ju bildes matlaba.</span>
+<span class="comment">%2)Apgriezu asis, lai b&#363;tu pareizi jeb sakristu.</span>
+<span class="comment">%3)Nolas&#299;j&#257;m 7 punktus un p&#275;c tiem z&#299;m&#275;ju grafiku</span>
+<span class="comment">%4)Ar polyfit pal&#299;dz&#299;bu apr&#275;&#311;in&#257;ju v&#275;rt&#299;bas un p&#275;c tam izveidoju 2</span>
+<span class="comment">%pak&#257;pes polinomu.</span>
+<span class="comment">%5)ar xlabel, ylabel, title - Var nomain&#299;t grafikas asu nosaukumus un</span>
+<span class="comment">%grafika nosaukumu, grid uzlieku grafikam t&#299;klojumu.</span>
+<span class="comment">%Ar &#353;&#299;m darb&#299;b&#257;m var viegli pa&#326;emt bildi ar grafiku no interneta un</span>
+<span class="comment">%uztais&#299;t tie&#353;i t&#257;du pa&#353;u matlab&#257;.</span>
+</pre><pre class="codeoutput">
+C =
+
+  237.4345 -721.8205  549.3189
+
+</pre><img vspace="5" hspace="5" src="lab1_01.png" alt=""> <img vspace="5" hspace="5" src="lab1_02.png" alt=""> <p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2016b</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%% Mērījumu datu apstrāde
+%Grats Grāvelsins - REBC04
+A = imread('a.png');
+B = imread('b.png');
+figure(1),image(A),shg
+figure(2),image(B),shg
+figure(2),image([1.2 3.2],[50 0],B),
+set(gca,'YDir','normal')
+%[x,y] = ginput(7)
+x = [1.5500 1.6184 1.6959 1.7781 1.8602 1.9103 1.9560];
+y = [1.3385 3.1413 6.7469 16.2115 30.1830 36.9434 44.9057];
+plot(x,y,'*r')
+U = 1.5:0.01:1.95;
+C = polyfit(x,y,2)
+%C = [237.4828 -721.9800 549.4505];
+I = C(1)*U.^2+C(2)*U+C(3);
+plot(x,y,'o',U,I)
+C = polyval(C,U);
+plot(x,y,'o',U,I)
+xlabel('Voltage(V)');
+ylabel('Strava(mA)')
+title('Grafiks');
+axis([1.2 3.2 0 50])
+grid
+%%Secinajumi: Ko es saprastu? 
+%1) Es ielasīju bildes matlaba.
+%2)Apgriezu asis, lai būtu pareizi jeb sakristu.
+%3)Nolasījām 7 punktus un pēc tiem zīmēju grafiku
+%4)Ar polyfit palīdzību aprēķināju vērtības un pēc tam izveidoju 2
+%pakāpes polinomu.
+%5)ar xlabel, ylabel, title - Var nomainīt grafikas asu nosaukumus un
+%grafika nosaukumu, grid uzlieku grafikam tīklojumu.
+%Ar šīm darbībām var viegli paņemt bildi ar grafiku no interneta un
+%uztaisīt tieši tādu pašu matlabā.
+##### SOURCE END #####
+--></body></html>
