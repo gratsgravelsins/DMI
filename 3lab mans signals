@@ -1,0 +1,31 @@
+function y = lab3gatavs(t)
+if nargin == 0 
+t = 0:0.01:5;
+end
+t_noisef = (t>=0)&(t<1); t_noise = t(t_noisef);
+t_sawf = (t>=1)&(t<1.5); t_saw = t(t_sawf);
+t_zerof = (t>=1.5)&(t<3.5); t_zero = t(t_zerof);
+t_constf = (t>=3.5)&(t<4); t_const = t(t_constf);
+t_sinf = (t>=4)&(t<=5); t_sin = t(t_sinf);
+y_noise = rand(size(t_noise))-0.5;
+k = (0.5-(-0.5))/(1-1.5);
+delay = 1.25;
+y_saw = k*(t_saw-delay);
+y_zero = zeros(size(t_zero));
+y_const = zeros(size(t_const))+1;
+A0=0;
+A=1;
+T = 0.25;
+f = 1/T;
+delay = 1;
+y_sin=A0+A*sin(2*pi*f*(t_sin-delay));
+y = [y_noise,y_saw,y_zero,y_const,y_sin];
+if nargout == 0
+plot(t,y)
+y=[]; 
+end
+
+Lai palaistu 
+>> t=0:0.01:5;
+>> y = lab3(t);
+>> plot(t,y)
