@@ -1,0 +1,54 @@
+%% Vidējās vērtibas aprēķins
+t = 0:0.01:5;
+h = 0.01;
+N = length(t);
+xvid3a = 1/(N-1)*sum(lab3gatavs(t(1:end-1)))
+xvid3b = 1/(N-1)*sum(lab3gatavs(t(2:end)))
+xvid3c = 1/(N-1)*sum(lab3gatavs(t(1:end-1)+h/2))
+xvid4 = 1/(N-1)*((((lab3gatavs(t(1))+lab3gatavs(t(end))))/2)+sum(lab3gatavs(t(2:end-1))))
+
+%% Istās vidējas vertības atrašana
+syms t_sin
+A0=0;A=1; T = 0.25; f = 1/T; delay = 1;
+y_sin=A0+A*sin(2*pi*f*(t_sin-delay));
+int_sin=int(y_sin,t_sin,4,5)
+syms t_saw
+k = (0.5-(-0.5))/(1-1.5);
+delay = 1.25;
+y_saw = k*(t_saw-delay);
+int_saw=int(y_saw,t_saw,1,1.5)
+syms t_const
+y_const = 1;
+int_const = int(y_const,t_const,3.5,4)
+%Ista videja vertiba
+istaa_vv=double(1/(t(end))*(int_saw+int_const+int_sin))
+
+%% 
+% * Rezultatu noformēšana tabulas vai grafika veida
+dt = [0.5 0.1 0.05 0.01 0.005];
+xvid3cm = [];
+for dtc = dt
+    t = 0:dtc:5;
+    N = length(t);
+    h = dtc;
+    xvid3c = 1/(N-1)*sum(lab3gatavs(t(1:end-1)+h/2));
+    fprintf('platums=%d \t vv3c=%d\n',h,xvid3c);
+    xvid3cm = [xvid3cm,xvid3c];
+end
+semilogx(dt,xvid3cm,'o-',dt,istaa_vv+0*dt) % semilogy vai loglog
+
+%% Simulink aprēķini 
+%
+% <<../a.png>>
+%
+% <<../b.png>>
+%
+% <<../c.png>>
+%
+% Simulink, lai tas stradatu vajag komandlogā nodefinet dtc = 0.01
+%% Secinajumi
+% Iemacijos aprekinaat videejo vertiibu ar vairakam metodem.
+% Izveidojot simulink shemu loti atri var nonaakt pie videejas vertibas.
+% Ari semilogx,semilogy vai loglog funkcijam dazreiz ir ertak konstruet
+% grafiku.
+% 
